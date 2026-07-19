@@ -1,0 +1,72 @@
+<svg width="1200" height="230" viewBox="0 0 1200 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#B347D9"/>
+      <stop offset="45%" stop-color="#8B2FC9"/>
+      <stop offset="100%" stop-color="#2E0F4F"/>
+    </radialGradient>
+    <linearGradient id="avatarGrad" cx="35%" cy="30%" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3FE0C8"/>
+      <stop offset="100%" stop-color="#8B2FC9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="230" fill="url(#glow)"/>
+
+  <!-- corner accents: bottom-left -->
+  <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2" fill="none">
+    <path d="M30,215 L70,175"/>
+    <path d="M55,215 L95,175"/>
+    <path d="M80,215 L120,175"/>
+    <path d="M105,215 L145,175"/>
+  </g>
+  <!-- corner accents: bottom-right -->
+  <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2" fill="none">
+    <path d="M1055,175 L1095,215"/>
+    <path d="M1080,175 L1120,215"/>
+    <path d="M1105,175 L1145,215"/>
+    <path d="M1130,175 L1170,215"/>
+  </g>
+
+  <!-- avatar -->
+  <g>
+    <circle cx="600" cy="52" r="42" fill="#0B1120" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.5"/>
+    <circle cx="600" cy="52" r="36" fill="url(#avatarGrad)">
+      <animate attributeName="r" values="34;37;34" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="600" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0B1120">RP</text>
+  </g>
+
+  <!-- HELLO WORLD -->
+  <text x="600" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" letter-spacing="4" fill="#FFFFFF" opacity="0">
+    HELLO WORLD
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.3s" fill="freeze"/>
+  </text>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3" fill="#E9D5FF" opacity="0">
+    Welcome to my Profile
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1s" fill="freeze"/>
+  </text>
+
+  <!-- left: link -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.4s" fill="freeze"/>
+    <circle cx="80" cy="98" r="14" fill="#FFFFFF"/>
+    <g stroke="#8B2FC9" stroke-width="1.4" fill="none">
+      <circle cx="80" cy="98" r="8"/>
+      <ellipse cx="80" cy="98" rx="3.5" ry="8"/>
+      <line x1="72" y1="98" x2="88" y2="98"/>
+    </g>
+    <text x="104" y="103" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#FFFFFF">github.com/RohithaBPrasad</text>
+  </g>
+
+  <!-- right: mail -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.4s" fill="freeze"/>
+    <circle cx="1000" cy="98" r="14" fill="#FFFFFF"/>
+    <g stroke="#8B2FC9" stroke-width="1.4" fill="none">
+      <rect x="993" y="93" width="14" height="10" rx="1.5"/>
+      <polyline points="993,93 1000,99 1007,93"/>
+    </g>
+    <text x="1022" y="103" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#FFFFFF">rohitha23ai@gmail.com</text>
+  </g>
+</svg>
